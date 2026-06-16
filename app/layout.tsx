@@ -1,9 +1,11 @@
 // layout.tsx
+
 import "katex/dist/katex.min.css";
 import "./globals.css";
+
+import Script from "next/script";
 import { Inter } from "next/font/google";
 
-// Importaciones agrupadas abajo de los estilos
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 
@@ -18,8 +20,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      {/* SE AÑADIÓ INTER AQUÍ */}
-      <body className={inter.className}> 
+      <body className={inter.className}>
+
+        <Script
+          async
+          strategy="afterInteractive"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3770775034295435"
+          crossOrigin="anonymous"
+        />
 
         <Navbar />
 
