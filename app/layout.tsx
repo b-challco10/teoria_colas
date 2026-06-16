@@ -20,24 +20,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className={inter.className}>
+  <head>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3770775034295435"
+      crossOrigin="anonymous"
+    />
+  </head>
 
-        <Script
-          async
-          strategy="afterInteractive"
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3770775034295435"
-          crossOrigin="anonymous"
-        />
+  <body className={inter.className}>
+    <Navbar />
 
-        <Navbar />
+    <main>{children}</main>
 
-        <main>
-          {children}
-        </main>
-
-        <Footer />
-
-      </body>
-    </html>
+    <Footer />
+  </body>
+</html>
   );
 }
