@@ -3,7 +3,6 @@
 import "katex/dist/katex.min.css";
 import "./globals.css";
 
-import Script from "next/script";
 import { Inter } from "next/font/google";
 
 import Navbar from "@/components/layout/Navbar";
@@ -20,21 +19,26 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-  <head>
-    <script
-      async
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3770775034295435"
-      crossOrigin="anonymous"
-    />
-  </head>
+      <head>
+        <meta
+          name="google-site-verification"
+          content="YmrQAKOvi-3ozcZlRuQIfwx2UoXNIF7-XMdhO48NWS8"
+        />
 
-  <body className={inter.className}>
-    <Navbar />
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3770775034295435"
+          crossOrigin="anonymous"
+        />
+      </head>
 
-    <main>{children}</main>
+      <body className={inter.className}>
+        <Navbar />
 
-    <Footer />
-  </body>
-</html>
+        <main>{children}</main>
+
+        <Footer />
+      </body>
+    </html>
   );
 }
