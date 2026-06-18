@@ -1,3 +1,4 @@
+import { FaLinkedin, FaEnvelope } from "react-icons/fa";
 export default function ContactoPage() {
   return (
     <main>
@@ -32,6 +33,31 @@ export default function ContactoPage() {
       </div>
 
       <div>
+        <h2>Información de contacto</h2>
+
+        <a
+          href="mailto:brayan.challco.ticona2@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaEnvelope />
+          <span> brayan.challco.ticona2@gmail.com</span>
+        </a>
+
+        <br />
+        <br />
+
+        <a
+          href="https://www.linkedin.com/in/brayan-challco-ticona-069056418/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaLinkedin />
+          <span> Brayan Challco Ticona</span>
+        </a>
+      </div>
+
+      <div>
         <h2>Tiempo de respuesta</h2>
 
         <p>
@@ -44,7 +70,7 @@ export default function ContactoPage() {
         <h2>Gracias por visitarnos</h2>
 
         <p>
-          Agradecemos tu interés en QueueCalc y tu colaboración para seguir
+          Agradecemos tu interés en ColaCalcBCT y tu colaboración para seguir
           mejorando esta herramienta educativa.
         </p>
       </div>
