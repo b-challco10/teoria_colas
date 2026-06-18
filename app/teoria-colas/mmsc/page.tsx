@@ -165,7 +165,7 @@ export default function MMSCPage() {
       <br />
 
       <div>
-        <label>M (Población finita)</label>
+        <label>m (Población finita)</label>
 
         <br />
 
